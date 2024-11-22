@@ -1,0 +1,415 @@
+/* Apply Roboto font to the entire website */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Apply Roboto font to headings */
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Bold for the main heading */
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 550; /* Bold for the main heading */ 
+}
+
+/* Apply Roboto font to paragraphs */
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* Regular text */
+}
+
+/* Apply Roboto font to buttons */
+button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500; /* Medium weight for button text */
+}
+
+
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    scroll-behavior: smooth;
+}
+
+/* Orange Container (Navigation) */
+.orange-container {
+    background-color: #eca310;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+
+.orange-container .logo img {
+    height: 55px;
+    width: auto;
+}
+
+.orange-container nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.orange-container nav ul li {
+    margin-right: 20px;
+}
+
+.orange-container nav ul li a {
+    text-decoration:none;
+    color: #ece7e7;
+    font-weight:bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.orange-container nav ul li a:hover {
+    background-color:  rgb(248, 120, 15);;
+    color:rgb(160, 73, 2);
+    border: #333;
+    border-radius: 5px;
+    padding:3px 3px;
+}
+
+/* Home Section */
+.background {
+    background-image: url('images/OR_Home.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.welcome{
+    height: 250px;
+}
+.welcome h1 {
+    font-size: 36px;
+    color: rgb(248, 162, 3);
+}
+
+.welcome p {
+    font-size: 18px;
+    color: rgb(78, 71, 71);
+    line-height: 1.5;
+    font-weight:bold;
+    
+}
+
+/* About Section */
+.about-main {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding-top: 70px;
+    font-family: Arial, sans-serif;
+    padding-bottom: 20px;
+}
+
+.about-main h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: #eca310;
+}
+
+.about-main p {
+    font-size: 16px;
+    line-height: 1;
+    color: rgb(78, 71, 71);
+    padding-bottom: 20px;
+
+}
+
+.operating-hours {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between each day-time pair */
+    font-size: 16px;
+}
+
+.about-main h3{
+    color:rgb(247, 204, 124);
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+.services {
+    display: flex;
+    flex-direction:row;
+    gap: 15px; /* Space between each service */
+    font-size: 18px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: rgb(78, 71, 71);
+    font-size: 16px;
+}
+.service {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    color: rgb(78, 71, 71);
+}
+
+.material-icons {
+    font-size: 16px; /* Icon size */
+    color: #eca310; /* Icon color */
+}
+
+.day-time {
+    display: flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    color: rgb(78, 71, 71);
+    padding-bottom: 10px;
+}
+
+.day {
+    flex: 1; /* Ensures the day takes as much space as possible */
+    
+}
+
+.time {
+    flex: 1; /* Ensures the time takes as much space as possible */
+    
+}
+
+/* Menu Section */
+.menu-section {
+    padding-bottom: 20px;
+    background-color: #fff1d5;
+    color: #eca310;
+    align-items: center;
+    text-align: center;
+    padding-top: 70px;
+    font-size: 20px;
+    
+}
+
+/* Container for the menu categories */
+.menu-categories {
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Individual menu category */
+.menu-category {
+    background-color: rgb(221, 221, 221);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px grey;
+}
+
+/* Menu Category Heading */
+.menu-category h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: rgb(247, 204, 124); /* Orange color */
+}
+
+/* Menu Item Styling */
+.menu-category p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: rgb(78, 71, 71);
+}
+
+/* Responsive Design - Stack columns on smaller screens */
+@media (max-width: 768px) {
+    .menu-categories {
+        grid-template-columns: 1fr; /* Stack categories in one column */
+    }
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.gallery-section h2 {
+    font-size: 25px;
+    padding-bottom: 5px;
+    color: #eca310;
+}
+
+/* Gallery Container */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 1090px;
+    margin: 0 auto;
+    
+    padding: 10px;
+}
+
+/* Gallery Item */
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+.contact-main {
+    padding: 30px 20px;
+    text-align: center;
+    color: #eca310;
+    font-size: 17px;
+}
+
+.contact-main form {
+    display: flex;
+    align-items: center;
+    color: rgb(78, 71, 71);
+    gap: 5px;
+
+
+}
+.contact-main h1{
+    padding-bottom: 20px;
+}
+
+.contact-main form label {
+    font-size:14px;
+}
+
+.contact-main form input{
+    width: 40%;
+    height: 5%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-main form textarea{
+    width: 40vw;
+    height: 6.7vh;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+.contact-main form button {
+    padding: 10px 10px;
+    font-size: 20px;
+    background-color: #eca310;
+    color: #f4f4f4;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.contact-main form button:hover {
+    background-color: rgb(122, 67, 0);
+    
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #fff1d5;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    color: rgb(78, 71, 71);
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-link {
+    display: inline-flexbox;
+    margin: 0 10px;
+    font-size: 30px; /* Adjust the size of the icon */
+    text-decoration: none;
+    
+}
+
+
+/* Facebook Icon */
+.social-link.facebook i {
+    color: #1877F2; /* Facebook's blue */
+}
+
+/* Instagram Icon */
+.social-link.instagram i {
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Instagram's gradient */
+    font-size: 28px; /* Slightly larger for better gradient visibility */
+}
+
+.get-hold {
+    flex: 1;
+    text-align: left;
+}
+
+.get-hold p {
+    color: rgb(78, 71, 71);
+    margin: 5px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.get-hold i {
+    margin-right: 8px;
+    color:#eca310;
+}
+
+.copyright {
+    flex: 1;
+    text-align: right;
+    font-size: 14px;
+    color: (78, 71, 71);
+}
+
