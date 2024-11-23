@@ -413,3 +413,94 @@ body {
     color: (78, 71, 71);
 }
 
+/* Responsive Design */
+
+/* General: Small Devices (phones, 600px and smaller) */
+@media (max-width: 600px) {
+    .orange-container {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px;
+    }
+
+    .orange-container nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .orange-container nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .background {
+        height: 60vh;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .about-main {
+        padding: 20px;
+    }
+
+    .menu-categories {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr; /* Stack gallery items in one column */
+    }
+
+    .contact-main form input,
+    .contact-main form textarea {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
+
+/* Medium Devices (Tablets, 768px and smaller) */
+@media (max-width: 768px) {
+    .orange-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .menu-categories {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for menu items */
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for gallery items */
+    }
+
+    .contact-main form input,
+    .contact-main form textarea {
+        width: 80%; /* Adjust width for medium screens */
+    }
+}
+
+/* Large Devices (Desktops, 1024px and larger) */
+@media (min-width: 1024px) {
+    .orange-container {
+        justify-content: space-between;
+    }
+
+    .menu-categories {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for menu items */
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(4, 1fr); /* Four columns for gallery items */
+    }
+
+    .contact-main form input,
+    .contact-main form textarea {
+        width: 60%; /* Adjust width for larger screens */
+    }
+}
