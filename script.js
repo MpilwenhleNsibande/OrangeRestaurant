@@ -8,7 +8,7 @@ form.addEventListener('submit', function(event) {
     // Simulate form submission logic
     alert("Thank you for your message! We'll get back to you soon.");
 
-    // Clear the form fields
+    // Clear the form fields after each submission
     form.reset();
 });
 
