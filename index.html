@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Set the character encoding for the document -->
     <meta charset="UTF-8">
+    <!-- Ensure the website is responsive and adjusts to different screen sizes -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage displayed on the browser tab -->
     <title>Orange Restaurant</title>
+    <!-- Favicon for the browser tab -->
     <link rel="icon" href="images/Logo_2.png" type="">
+    <!-- Link to the external CSS stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    <!-- (Incorrect) link to JavaScript file (should use `src` attribute for JS files) -->
     <link rel="javascript" href="script.js">
+    <!-- Link to Google Fonts for the "Roboto" font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Link to Google Material Icons for icons usage -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Link to Bootstrap Icons library for additional icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
 </head>
+
+
 <body>
-    <!-- Navigation Bar -->
+    <!--Navigation bar section-->
+    <!-- Header section containing the navigation bar and logo -->
     <div class="orange-container">
+        <!-- Logo for the restaurant -->
         <div class="logo">
             <img src="images/Logo_2.png" alt="Orange Restaurant Logo">
         </div>
+        <!-- Navigation menu -->
         <nav class="home">
             <ul>
+                <!-- Links to different sections of the webpage -->
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#menu">MENU</a></li>
@@ -31,19 +45,23 @@
         </nav>
     </div>
 
-    <!-- Sections -->
+<!--Home section-->
+    <!-- Welcome section with a background image -->
     <section id="home" class="background">
         <div class="welcome">
+            <!-- Main heading welcoming users -->
             <h1>Welcome to Orange Restaurant</h1>
-            <p>
-                Experience the best dining ambiance in Pretoria
-            </p>
+            <!-- Subheading to introduce the restaurant -->
+            <p>Experience the best dining ambiance in Pretoria</p>
         </div>
     </section>
 
+    <!--About restaurant section-->
+    <!-- About section providing information about the restaurant -->
     <section id="about" class="about-main">
         <h1>About Us</h1>
         <p>
+            <!-- Key details about the restaurant, including location, amenities, and services -->
             Orange Restaurant is located on-site at the Court Classique Suite Hotel, Pretoria.<br>
             Open to hotel guests and the public for Breakfast, lunch & dinner<br>
             Free, secure parking within the hotel grounds.<br>
@@ -52,6 +70,7 @@
             Event venue for corporate functions, conferences, gala dinners, cocktail parties or intimate weddings for up to 60 guests
         </p>
         <h3>Operating Hours</h3>
+        <!-- List of operating hours for each day -->
         <div class="operating-hours">
             <div class="day-time">
                 <span class="day">Monday</span>
@@ -82,8 +101,10 @@
                 <span class="day">Sunday</span>
                 <span class="time">06:30 - 21:30</span>
             </div>
+        <!--Services-->    
         </div>
         <h3>Services</h3>
+        <!-- List of additional services offered by the restaurant -->
         <div class="services">
             <div class="service">
                 <i class="material-icons">outdoor_grill</i>
@@ -98,77 +119,78 @@
                 <span>In-store collection</span>
             </div>
         </div>
-        
     </section>
-    
 
-    <!-- Menu Section -->
+
 <!-- Menu Section -->
-<section id="menu" class="menu-section">
-    <h3>Our Menu</h3>
+<!-- Menu section displaying various food categories and their items-->
+    <section id="menu" class="menu-section">
+        <h3>Our Menu</h3>
 
-    <!-- Menu Categories -->
-    <div class="menu-categories">
-        <!-- Sandwiches and Wraps -->
-        <div class="menu-category">
-            <h3>Sandwiches and Wraps</h3>
-            <p>Toasted Ham, Cheese, and Tomato - R25</p>
-            <p>Toasted Cheese and Tomato - R20</p>
-            <p>Toasted Egg, Bacon, and Cheese - R30</p>
-            <p>Toasted Tuna Mayo - R30</p>
-            <p>Toasted Bacon and Cheese - R25</p>
-            <p>Toasted Chicken Mayo - R25</p>
-            <p>Beef or Chicken Dagwood with Chips - R35</p>
-            <p>Panini Bread with Chicken or Beef Fillings - R35</p>
-            <p>Chicken, Beef, or Ham Wraps with Chips - R40</p>
-            <p>Small Chips - R10</p>
-            <p>Large Chips - R20</p>
-        </div>
+        <!-- Menu Categories -->
+        <div class="menu-categories">
+            <!-- Sandwiches and Wraps -->
+            <div class="menu-category">
+                <h3>Sandwiches and Wraps</h3> <!--Food category title-->
+                <p>Toasted Ham, Cheese, and Tomato - R25</p> <!--Food items and their prices-->
+                <p>Toasted Cheese and Tomato - R20</p>
+                <p>Toasted Egg, Bacon, and Cheese - R30</p>
+                <p>Toasted Tuna Mayo - R30</p>
+                <p>Toasted Bacon and Cheese - R25</p>
+                <p>Toasted Chicken Mayo - R25</p>
+                <p>Beef or Chicken Dagwood with Chips - R35</p>
+                <p>Panini Bread with Chicken or Beef Fillings - R35</p>
+                <p>Chicken, Beef, or Ham Wraps with Chips - R40</p>
+                <p>Small Chips - R10</p>
+                <p>Large Chips - R20</p>
+            </div>
 
-        <!-- Grill -->
-        <div class="menu-category">
-            <h3>Grill</h3>
-            <p>Boerewors & Chicken Thigh with Pap or Rice & Gravy - R40</p>
-            <p>Grilled T-Bone Steak with Chips or Pap & Gravy - R65</p>
-            <p>Glazed Pork Ribs with Chips or Salad - R65</p>
-            <p>Braai with Pap or Chips & Gravy - R120</p>
-        </div>
+            <!-- Grill -->
+            <div class="menu-category">
+                <h3>Grill</h3>
+                <p>Boerewors & Chicken Thigh with Pap or Rice & Gravy - R40</p>
+                <p>Grilled T-Bone Steak with Chips or Pap & Gravy - R65</p>
+                <p>Glazed Pork Ribs with Chips or Salad - R65</p>
+                <p>Braai with Pap or Chips & Gravy - R120</p>
+            </div>
 
-        <!-- Hearty Meals -->
-        <div class="menu-category">
-            <h3>Hearty Meals</h3>
-            <p>Quarter Spatlo with Chips - R20</p>
-            <p>Traditional Chicken Curry with Rice or Pap & Veggies - R40</p>
-            <p>Beef Meat Balls in Gravy with Pap, Rice, or Penne Pasta - R40</p>
-            <p>Traditional Beef Stew with Pap or Rice & Veggies - R45</p>
-        </div>
+            <!-- Hearty Meals -->
+            <div class="menu-category">
+                <h3>Hearty Meals</h3>
+                <p>Quarter Spatlo with Chips - R20</p>
+                <p>Traditional Chicken Curry with Rice or Pap & Veggies - R40</p>
+                <p>Beef Meat Balls in Gravy with Pap, Rice, or Penne Pasta - R40</p>
+                <p>Traditional Beef Stew with Pap or Rice & Veggies - R45</p>
+            </div>
 
-        <!-- Poultry and Fish -->
-        <div class="menu-category">
-            <h3>Poultry and Fish</h3>
-            <p>Crumbed Chicken Salad - R35</p>
-            <p>Deep Fried Hake with Chips or Salad - R40</p>
-            <p>Glazed Chicken Wings with Chips or Pap - R55</p>
-            <p>Whole Chicken with Pap or Rice & Veggies - R165</p>
-        </div>
+            <!-- Poultry and Fish -->
+            <div class="menu-category">
+                <h3>Poultry and Fish</h3>
+                <p>Crumbed Chicken Salad - R35</p>
+                <p>Deep Fried Hake with Chips or Salad - R40</p>
+                <p>Glazed Chicken Wings with Chips or Pap - R55</p>
+                <p>Whole Chicken with Pap or Rice & Veggies - R165</p>
+            </div>
 
-        <!-- Sweets and Snacks -->
-        <div class="menu-category">
-            <h3>Sweets and Snacks</h3>
-            <p>Fluffy Muffins - R10</p>
-            <p>Fresh Scones - R10</p>
-        </div>
+            <!-- Sweets and Snacks -->
+            <div class="menu-category">
+                <h3>Sweets and Snacks</h3>
+                <p>Fluffy Muffins - R10</p>
+                <p>Fresh Scones - R10</p>
+            </div>
 
-        <!-- Burgers -->
-        <div class="menu-category">
-            <h3>Burgers</h3>
-            <p>Chicken Burger with Chips - R50</p>
-            <p>Beef Burger with Chips - R50 </p>
+            <!-- Burgers -->
+            <div class="menu-category">
+                <h3>Burgers</h3>
+                <p>Chicken Burger with Chips - R50</p>
+                <p>Beef Burger with Chips - R50 </p>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+
 <!--Gallery Section-->
-<!-- Gallery Section -->
+<!-- Image gallery showcasing dishes or the restaurant  ambiance -->
 <section id="gallery" class="gallery-section">
     <h2>Gallery</h2>
     <div class="gallery-container">
@@ -187,10 +209,12 @@
     </div>
 </section>
 
-
+<!--Contact Section-->
+<!-- Contact form for users to send messages, this can be utilized for booking and ordering also -->
     <section id="contact" class="contact-main">
         <h1>Contact Us</h1>
         <form id="contact-form">
+            <!-- Form fields for name, email, and message -->
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br><br>
     
@@ -199,7 +223,7 @@
     
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea><br><br>
-    
+            <!--Form submission button-->
             <button type="submit">Submit</button>
         </form>
     
@@ -208,12 +232,16 @@
     </section>
 
  <!-- Footer -->
+  <!-- Footer containing contact information and social media links -->
 <footer class="footer">
     <div class="get-hold">
+        <!-- Restaurant Address, email, and phone details -->
         <p><i class="material-icons">location_on</i> 743 Francis Baard St, Tshwane, 0083, South Africa</p>
         <p><i class="material-icons">email</i> orange@courtclassique.co.za</p>
         <p><i class="material-icons">phone</i> 012 344 4420</p>
     </div>
+
+    <!-- Links to social media accounts -->
     <div class="social-icons">
         <a href="https://www.facebook.com/OrangeRestaurantPretoria/about_contact_and_basic_info" 
            target="_blank" class="social-link facebook">
@@ -224,11 +252,11 @@
             <i class="bi bi-instagram"></i>
         </a>
     </div>
+
+    <!-- Copyright notice -->
     <div class="copyright">
         <p>&copy; 2024 Orange Restaurant</p>
     </div>
 </footer>
-
-
 </body>
 </html>
